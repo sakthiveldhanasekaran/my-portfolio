@@ -1,0 +1,91 @@
+$colors: (
+    primary-grey: #e5e5e5,
+    primary-blue: #3857ff
+);
+
+@function colors($color) {
+    @return map-get($colors, $color);
+}
+
+$fonts: (
+    roboto: #{'Roboto', sans-serif},
+    caveat: #{'Caveat', cursive},
+    roboto-slab: #{'Roboto Slab', serif}
+);
+
+@function font($font) {
+    @return map-get($fonts, $font);
+}
+
+$font-weights: (
+    regular: 400,
+    medium: 500,
+    bold: 700,
+    black: 900
+);
+
+@function weights($weight) {
+    @return map-get($font-weights, $weight);
+}
+
+.dashboard {
+    .hero {
+        background: colors(primary-grey);
+        height: 320px;
+    }
+
+    .blue-hero {
+        background: colors(primary-blue);
+        .container {
+            padding-top: 120px;
+            padding-bottom: 120px;
+            .about-content {
+                padding: 0 20px;
+                max-width: 600px;
+                margin: 0 auto;
+                h2 {
+                    font-size: 48px;
+                    font-weight: weights(medium);
+                    color: white;
+                    margin-bottom: 48px;
+                    text-align: center;
+                }
+
+                p {
+                    color: white;
+                    font-weight: weights(regular);
+                    line-height: 18px;
+                    font-size: 15px;
+                    font-family: font(roboto);
+
+                    a {
+                        color: white;
+                        text-decoration: none;
+                        border-bottom: 1px solid rgba(255, 255, 255, 0.50);
+                    }
+
+                    a:hover {
+                        border-bottom: 1px solid white;
+                    }
+                }
+
+                .sign-wrap {
+                    font-size: 24px;
+                    color: white;
+                    font-weight: weights(regular);
+                    margin-top: 48px;
+
+                    .signature {
+                        font-family: font(caveat);
+                    }
+
+                    .name {
+                        font-weight: weights(regular);
+                        font-size: 11px;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+    }
+}

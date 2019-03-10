@@ -1,0 +1,32 @@
+form {
+  width: 600px;
+  margin: 0 auto;
+}
+
+form div {
+  margin-bottom: 10px;
+}
+
+form div input, form div textarea {
+  padding: 15px;
+  font-size: 18px;
+  border: 1px solid #ccc;
+  width: 100%;
+  outline: none;
+}
+
+form div input:hover,
+form div input:focus,
+form div textarea:hover,
+form div textarea:focus {
+  border: 1px solid #3857ff;
+}
+
+form button {
+  padding: 15px;
+  font-size: 18px;
+  color: white;
+  background-color: #3857ff;
+  border: none;
+}
+/*# sourceMappingURL=contact.component.css.map */

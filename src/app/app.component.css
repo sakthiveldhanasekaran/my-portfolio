@@ -1,0 +1,33 @@
+header div.logo {
+  float: left;
+}
+
+header div.menu {
+  float: right;
+}
+
+header div.menu nav {
+  display: block;
+}
+
+header div.menu nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header div.menu nav ul li a {
+  display: block;
+  padding: 16px;
+  text-decoration: none;
+  color: #222;
+  font-weight: 700;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+header div.menu nav ul li a:hover {
+  background-color: #3857ff;
+  color: white;
+}
+/*# sourceMappingURL=app.component.css.map */

@@ -1,0 +1,28 @@
+form {
+    width: 600px;
+    margin: 0 auto;
+    div {
+        margin-bottom: 10px;
+        input, textarea {
+            padding: 15px;
+            font-size: 18px;
+            border: 1px solid #ccc;
+            width: 100%;
+            outline: none;
+        }
+
+        input:hover,
+        input:focus,
+        textarea:hover,
+        textarea:focus {
+            border: 1px solid #3857ff;
+        }
+    }
+    button {
+        padding: 15px;
+        font-size: 18px;
+        color: white;
+        background-color: #3857ff;
+        border: none;
+    }
+}

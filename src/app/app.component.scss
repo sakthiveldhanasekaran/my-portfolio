@@ -1,0 +1,66 @@
+$fonts: (
+    roboto: #{'Roboto', sans-serif},
+    caveat: #{'Caveat', cursive}
+);
+
+@function font($font) {
+    @return map-get($fonts, $font);
+}
+
+$font-weights: (
+    regular: 400,
+    medium: 500,
+    bold: 700,
+    black: 900
+);
+
+@function weights($weight) {
+    @return map-get($font-weights, $weight);
+}
+
+$colors: (
+    primary-grey: #e5e5e5,
+    primary-blue: #3857ff
+);
+
+@function colors($color) {
+    @return map-get($colors, $color);
+}
+
+$padding-16: 16px;
+
+header {
+    div.logo {
+        float: left;
+    }
+
+    div.menu {
+        float: right;
+
+        nav {
+            display: block;
+
+            ul {
+                display: flex;
+
+                li {
+
+                    a {
+                        display: block;
+                        padding: $padding-16;
+                        text-decoration: none;
+                        color: #222;
+                        font-weight: weights(bold);
+                        font-size: 13px;
+                        text-transform: uppercase;
+                    }
+
+                    a:hover {
+                        background-color: colors(primary-blue);
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}
